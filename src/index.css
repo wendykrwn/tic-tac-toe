@@ -1,0 +1,108 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 197, 120, 1) 0%,
+    rgba(251, 157, 35, 1) 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, rgba(255, 197, 120, 1)),
+    color-stop(100%, rgba(251, 157, 35, 1))
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 197, 120, 1) 0%,
+    rgba(251, 157, 35, 1) 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 197, 120, 1) 0%,
+    rgba(251, 157, 35, 1) 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(255, 197, 120, 1) 0%,
+    rgba(251, 157, 35, 1) 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 197, 120, 1) 0%,
+    rgba(251, 157, 35, 1) 100%
+  );
+  background: pink;
+}
+  
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgb(255, 246, 125);
+  border: 1px solid rgb(255, 178, 77);
+  float: left;
+  font-size: 3.5rem;
+  font-weight: bold;
+  height: 6rem;
+  width: 6rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+
+.square.player1{
+  color: rgb(255, 153, 153);
+}
+.square.player2{
+  color:rgb(146, 146, 146);
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square:hover{
+  opacity: 0.6;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+}
+
+.game-info {
+  margin: 20px;
+  color:rgb(146, 146, 146);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.game-board{
+  box-shadow:  2px 2px 10px rgba(0,0,0,0.25);
+}
